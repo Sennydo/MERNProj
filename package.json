@@ -1,0 +1,24 @@
+{
+  "name": "productmern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "SET NODE_ENV=development&& nodemon &&./Backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm install --prefix FrontEnd && npm run build --prefix FrontEnd",
+    "start": "SET NODE_ENV=production&& node ./Backend/server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
